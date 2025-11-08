@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overclock Store | Contacto</title>
+    <link rel="stylesheet" href="assetts/css/contact.css">
+
+</head>
+
+<body>
+      <header class="site-header">
+    <div class="container nav">
+      <h1 class="logo">
+        <img src="assetts/img/OverClockLogo.png" alt="Overclock Logo" class="logo-img">
+      </h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="products.html">Productos</a></li>
+          <li><a class="active" href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main class="contacto">
+        <section class="seccionInfo">
+            <h2>Información</h2>
+            <div class="direccionInfo">
+                <h3>Dirección:</h3>
+                <p>Galería centro</p>
+                <p>Villa Mercedes, San luis</p>
+            </div>
+            <div class="wspInfo">
+                <h3>WhatsApp:</h3>
+                <p>Por consultas acerca de tu pedido ya realizado:</p>
+                <p>WhatsApp: 2657123456</p>
+                <p>Por consultas para realizar un pedido:</p>
+                <p>WhatsApp: 2657123456</p>
+            </div>
+            <div class="horariosInfo">
+                <h3>Horarios de atención:</h3>
+                <p>Lunes a viernes de 9:00 a 19:00</p>
+                <p>Sábados de 10:00 a 14:00</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.8008447271295!2d-65.45991171689018!3d-33.6755077990486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d16a8988796ca7%3A0x178c644094662e35!2sVilla%20Mercedes%2C%20San%20Luis%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1761621706696!5m2!1ses-419!2sus"
+                width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="seccionFormulario">
+            <h2>Contacto</h2>
+
+            <form class="formulario" id="contacto-form" novalidate onsubmit="validarFormulario(event)">
+
+                <div class="item">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" required>
+                    <span id="error-email" class="error-mensaje"></span>
+                </div>
+
+                <div class="item">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                    <span id="error-telefono" class="error-mensaje"></span>
+                </div>
+
+                <div class="item" id="mensaje-container">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" required maxlength="500"></textarea>
+                    <span id="error-mensaje" class="error-mensaje"></span>
+                </div>
+
+                <div class="item-button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+
+            <div id="contact-result" class="contact-result" aria-live="polite"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Overclock Store - Tecnología al mejor precio</p>
+    </footer>
+
+    <script src="assetts/js/contact.js"></script>
+</body>
+
+</html>

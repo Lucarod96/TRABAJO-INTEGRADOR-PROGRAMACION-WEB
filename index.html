@@ -1,76 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CompraTech | Inicio</title>
-  <link rel="stylesheet" href="Style.css"/>
-  <script defer src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overclock Store | Inicio</title>
+  <link rel="stylesheet" href="assetts/css/index.css" />
+  <script defer src="assetts/js/index.js"></script>
 </head>
+
 <body>
-  <!-- ============================= -->
-  <!-- NAVBAR (FLEX)                -->
-  <!-- ============================= -->
+
   <header class="site-header">
     <div class="container nav">
-      <h1 class="logo">CompraTech</h1>
+      <h1 class="logo">
+        <img src="assetts/img/OverClockLogo.png" alt="Overclock Logo" class="logo-img">
+      </h1>
       <nav>
         <ul class="nav-links">
           <li><a class="active" href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="products.html">Productos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ============================= -->
-  <!--            HERO               -->
-  <!-- ============================= -->
   <section class="hero container">
     <h2>La mejor tecnología al mejor precio</h2>
     <p>Placas de video, monitores, teclados y más, todo con garantía y soporte.</p>
   </section>
 
-  <!-- ============================= -->
-  <!--          CARRUSEL             -->
-  <!-- ============================= -->
-    <section class="marco-carrusel">
+  <section class="marco-carrusel"> 
     <div class="contenedor-carrusel">
-
-        <h2 class="titulo-carrusel">Productos destacados</h2>
-
-        <button id="prev" class="btn-carrusel" aria-label="Anterior">‹</button>
-
-        <div class="ventana">
-        <!-- La tira contiene las imágenes a pantalla completa -->
+      <h2 class="titulo-carrusel">Productos destacados</h2>
+      <button id="prev" class="btn-carrusel" aria-label="Anterior">‹</button>
+      <div class="ventana">
         <div class="tira">
-            <!-- Si mantienes espacios y mayúsculas, usa %20 en los espacios -->
-            <img src="img/monitor_msi_144.png" alt="Monitor MSI 144Hz">
-            <img src="img/rtx-4090.png" alt="GeForce RTX 4090">
-            <img src="img/teclado-mecanico-rgb.png" alt="Teclado mecánico RGB">
+          <img src="assetts/img/Ryzen5.webp" alt="Ryzen5">
+          <img src="assetts/img/Ryzen7.webp" alt="Ryzen 7">
+          <img src="assetts/img/Ryzen9.webp" alt="Ryzen 9">
+          <img src="assetts/img/rtx5070ti.webp" alt="GeForce RTX 5070 Ti">
+          <img src="assetts/img/rtx5080.webp" alt="GeForce RTX 5080">
+          <img src="assetts/img/rtx5090.webp" alt="GeForce RTX 5090">
         </div>
-        </div>
-
-        <button id="next" class="btn-carrusel" aria-label="Siguiente">›</button>
-
-        <div class="dots" aria-label="Paginación del carrusel"></div>
+      </div>
+      <button id="next" class="btn-carrusel" aria-label="Siguiente">›</button>
+      <div class="dots" aria-label="Paginación del carrusel"></div>
     </div>
-    </section>
+  </section>
 
-<!-- Asegurate de que el script se cargue al final o con defer -->
-<script src="script.js" defer></script>
-
-
-<!-- carga el JS con defer o al FINAL del body -->
-<script src="script.js" defer></script>
-
-
-  <!-- ============================= -->
-  <!-- SECCIÓN DE INFORMACIÓN (tres columnas con flex) -->
-  <!-- ============================= -->
   <section class="info container">
-    <h2>¿Por qué comprar en CompraTech?</h2>
+    <h2>¿Por qué comprar en Overclock Store?</h2>
     <div class="grid-3">
       <article class="card">
         <h3>Envíos a todo el país</h3>
@@ -89,8 +70,9 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 CompraTech — Tecnología al mejor precio.</p>
+      <p>© 2025 Overclock Store — Tecnología al mejor precio.</p>
     </div>
   </footer>
 </body>
+
 </html>
