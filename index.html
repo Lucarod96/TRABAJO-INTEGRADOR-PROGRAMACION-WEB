@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Overclock Store | Inicio</title>
   <link rel="stylesheet" href="assetts/css/index.css" />
-  <script defer src="assetts/js/index.js"></script>
 </head>
 
 <body>
-
-  <header class="site-header">
+  <header>
     <div class="container nav">
       <h1 class="logo">
         <img src="assetts/img/OverClockLogo.png" alt="Overclock Logo" class="logo-img">
@@ -36,15 +34,8 @@
       <h2 class="titulo-carrusel">Productos destacados</h2>
       <button id="prev" class="btn-carrusel" aria-label="Anterior">‹</button>
       <div class="ventana">
-        <div class="tira">
-          <img src="assetts/img/Ryzen5.webp" alt="Ryzen5">
-          <img src="assetts/img/Ryzen7.webp" alt="Ryzen 7">
-          <img src="assetts/img/Ryzen9.webp" alt="Ryzen 9">
-          <img src="assetts/img/rtx5070ti.webp" alt="GeForce RTX 5070 Ti">
-          <img src="assetts/img/rtx5080.webp" alt="GeForce RTX 5080">
-          <img src="assetts/img/rtx5090.webp" alt="GeForce RTX 5090">
+          <img id="imagen-carrusel" src="assetts/img/img0.webp" alt="Producto destacado"/>
         </div>
-      </div>
       <button id="next" class="btn-carrusel" aria-label="Siguiente">›</button>
       <div class="dots" aria-label="Paginación del carrusel"></div>
     </div>
@@ -52,7 +43,7 @@
 
   <section class="info container">
     <h2>¿Por qué comprar en Overclock Store?</h2>
-    <div class="grid-3">
+    <div>
       <article class="card">
         <h3>Envíos a todo el país</h3>
         <p>Trabajamos con logística segura para que tus productos lleguen rápido y en perfectas condiciones.</p>
@@ -73,6 +64,8 @@
       <p>© 2025 Overclock Store - Tecnología al mejor precio.</p>
     </div>
   </footer>
+
+  <script src="assetts/js/index.js"></script>
 </body>
 
 </html>

@@ -113,12 +113,12 @@ header {
 .contenedor-carrusel {
   position: relative;
   padding: 0 42px 36px;
+  text-align: center;
 }
 
 .titulo-carrusel {
   color: var(--primary);
   margin: 12px 0 18px;
-  text-align: center;
 }
 
 .ventana {
@@ -127,21 +127,18 @@ header {
   overflow: hidden;
   border-radius: 12px;
   background: #101317;
-}
-
-.tira {
   display: flex;
-  height: 100%;
-  transition: transform 0.5s ease;
+  align-items: center;
+  justify-content: center;
 }
 
-.tira img {
-  flex: 0 0 100%;
+#imagen-carrusel {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 16px;
   background: #0c0f13;
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .btn-carrusel {
@@ -160,32 +157,15 @@ header {
   cursor: pointer;
   font-size: 22px;
   z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.btn-carrusel:hover {
+  background: var(--primary-hover);
 }
 
 #prev { left: 8px; }
 #next { right: 8px; }
-
-.dots {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 8px;
-  display: flex;
-  gap: 8px;
-}
-
-.dots button {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: #3d4652;
-}
-
-.dots button.active {
-  background: var(--primary);
-  transform: scale(1.2);
-}
 
 .info {
   margin-top: 26px;
@@ -227,12 +207,5 @@ footer {
   
   .logo-img {
     height: 36px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
   }
 }
